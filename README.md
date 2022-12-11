@@ -3,11 +3,11 @@
 
 
 ## ESPAÑOL :es: 
-Este es un código en Python que usa la librería Openpyxl para calcular los puntos de una lista de agentes o vendedores 
+Este es un código en Python que usa la librería Openpyxl para calcular los puntos de una lista de agentes o vendedores teniendo en cuenta un sistema de referidos de hasta 3 niveles, ademas de tener en cuenta 3 tipos de ventas dependiendo de la procedencia del lead usado para la venta
 
-Este programa consume los datos de un archivo de Excel. el archivo de Excel debe tener 3 hojas:
+Este programa consume los datos de un archivo de Excel. El archivo de Excel debe tener 4 hojas:
 
-- **Agents: **Una lista de todos los agentes o vendedores
+- **Agents:** Una lista de todos los agentes o vendedores
 
 - **Referals:** Una lista de que agentes han referido a otros agentes
 
@@ -15,21 +15,42 @@ Este programa consume los datos de un archivo de Excel. el archivo de Excel debe
 
 - **Points:** En esta hoja el programa escribirá los puntos de todos los agentes basado en sus ventas y las ventas de sus referidos
 
+
+**ADVERTENCIAS :no_entry_sign:**
+- Este programa esta **NO** esta diseñado para ningún tipo de **estafa piramidal, evita su uso para acciones ilegales**
+
+- Utilizar las columnas y hojas designadas en la plantilla, el programa no funcionara bien si no se usa de esta manera ya que estas son las columnas que usa el código
+
+- No cambies los nombres de las hojas, sin estos nombres el programa no funcionara correctamente
+
 - Este programa esta diseñado para contar referidos **hasta tercer nivel**, mas allá de este nivel **no se contaran los puntos**
 
-- **No hay limite de referidos en cada nivel**, esto significa, un agente puede tener cualquier cantidad de referidos en cualquier nivel siempre y cuando estos estén en los primeros 3 niveles
+- **No hay limite de referidos en cada nivel**, esto significa que, un agente puede tener cualquier cantidad de referidos en cualquier nivel siempre y cuando estos estén en los primeros 3 niveles
 
 [![Sistema de referidos](https://dossierinteractivo.com/wp-content/uploads/2021/04/Estafas-Piramidales-portada.jpg "Sistema de referidos")](http://https://dossierinteractivo.com/wp-content/uploads/2021/04/Estafas-Piramidales-portada.jpg "Sistema de referidos")
 
-**ADVERTENCIA :no_entry_sign:**
-- Este programa esta **NO** esta diseñado para ningún tipo de estafa piramidal, evita su uso para acciones ilegales.
+
+**ERRORES :boom:**
+
+El programa esta diseñado para evitar errores como: 
+- **Nombrar diferente un mismo agente o vendedor en el archivo excel**, por ejemplo: "Sara" "Sara " "SARA" "sARA" "Sara" (Todas son cadenas de texto diferentes)
+
+- Que alguien **se refiera a si mismo**
+
+- Que alguien tenga un **mismo referido en dos niveles diferentes**
+
+
+**RECOMENDACIONES :green_heart:**
+- Utilizar las columnas y hojas designadas en la plantilla, el programa no funcionara bien si no se usa de esta manera ya que estas son las columnas que usa el código
+
+- No cambies los nombres de las hojas, sin estos nombres el programa no funcionara correctamente
 
 
 
 ## ENGLISH :us:
-This is a Python code that uses the Openpyxl library to calculate the points of a list of agents or sellers.
+This is a Python code that uses the Openpyxl library to calculate the points of a list of agents or sellers taking into account a referral system of up to 3 levels, as well as taking into account 3 types of sales depending on the origin of the lead used for the sale.
 
-This program consumes data from an Excel file. The Excel file must have 3 sheets:
+This program consumes data from an Excel file. The Excel file must have 4 sheets:
 - **Agents:** A list of all agents or sellers.
 
 - **Referals:**A list of which agents have referred other agents.
@@ -38,11 +59,32 @@ This program consumes data from an Excel file. The Excel file must have 3 sheets
 
 - **Points:** On this sheet the program will write the points of all agents based on their sales and the sales of their referrals.
 
-- The program is designed to count referrals **up to the third level**, beyond this level **no points will be counted**
 
-- **There is no limit of referrals in each level**, this means, an agent can have any amount of referrals in any level as long as they are in the first 3 levels.
+**WARNINGS :no_entry_sign:**
+- This program is **NOT** designed for any kind of **pyramid scam, avoid using it for illegal actions**
+
+- Use the columns and sheets designated in the template, the program will not work properly if not used in this way as these are the columns used by the code.
+
+- Do not change the names of the sheets, without these names the program will not work correctly.
+
+- This program is designed to count referrals **up to third level**, beyond this level **no points will be counted**.
+
+- There is no limit of referrals in each level**, this means, an agent can have any amount of referrals in any level as long as they are in the first 3 levels.
 
 [![Sistema de referidos](https://dossierinteractivo.com/wp-content/uploads/2021/04/Estafas-Piramidales-portada.jpg "Sistema de referidos")](http://https://dossierinteractivo.com/wp-content/uploads/2021/04/Estafas-Piramidales-portada.jpg "Sistema de referidos")
 
-**WARNING :no_entry_sign:**
-- This program is **NOT** designed for any kind of pyramid scheme, avoid using it for illegal actions.
+
+**ERRORS :boom:**
+
+The program is designed to avoid errors such as: 
+- **Naming the same agent or salesperson differently in the excel file**, for example: "Sara" "Sara " "SARA" "sARA" "sARA" "Sara" (They are all different text strings).
+
+- Someone **refers to himself/herself** 
+
+- Someone has **the same referrer on two different levels**
+
+
+**RECOMMENDATIONS :green_heart:**
+- Use the columns and sheets designated in the template, the program will not work properly if not used in this way as these are the columns used by the code.
+
+- Do not change the names of the sheets, without these names the program will not work correctly.

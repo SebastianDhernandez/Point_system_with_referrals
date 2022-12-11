@@ -129,7 +129,7 @@ list_names = []
 
 # Create agent´s objects
 for i in range(2, row_count + 1):
-    name = sheet.cell(row=i, column=1).value
+    name = sheet.cell(row=i, column=1).value.strip().lower()
     if name not in list_names:
         p = Agent(name)
         list_agents.append(p)
@@ -140,8 +140,8 @@ row_count = sheet.max_row
 
 # Save the first line sons
 for i in range(2, row_count + 1):
-    name = sheet.cell(row=i, column=1).value
-    son = sheet.cell(row=i, column=2).value
+    name = sheet.cell(row=i, column=1).value.value.strip().lower()
+    son = sheet.cell(row=i, column=2).value.value.strip().lower()
     position = list_names.index(name)
     list_agents[position].changesons1(son)
 

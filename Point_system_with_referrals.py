@@ -16,19 +16,22 @@ class Agent:
 
     # Function to change the sons
     def changesons1(self, son):
-        if son not in self.__Sons2:
-            if son not in self.__Sons3:
-                self.__Sons1.append(son)
+        if son != self.Name:
+            if son not in self.__Sons2:
+                if son not in self.__Sons3:
+                    self.__Sons1.append(son)
 
     def changesons2(self, son):
-        if son not in self.__Sons1:
-            if son not in self.__Sons3:
-                self.__Sons2.append(son)
+        if son != self.Name:
+            if son not in self.__Sons1:
+                if son not in self.__Sons3:
+                    self.__Sons2.append(son)
 
     def changesons3(self, son):
-        if son not in self.__Sons2:
-            if son not in self.__Sons1:
-                self.__Sons3.append(son)
+        if son != self.Name:
+            if son not in self.__Sons2:
+                if son not in self.__Sons1:
+                    self.__Sons3.append(son)
 
     # Function to get the sons
     def getsons1(self):
